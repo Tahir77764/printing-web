@@ -11,7 +11,7 @@ const HeroCarousel = () => {
   return (
     <Swiper
       modules={[Pagination, Autoplay]}
-      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      autoplay={{ delay: 45000, disableOnInteraction: false }}
       loop
       pagination={{ clickable: true }}
       className="w-full h-screen [&_.swiper-pagination]:hidden"
