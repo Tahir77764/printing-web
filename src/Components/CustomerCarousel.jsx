@@ -5,35 +5,35 @@
 import React, { useState } from "react";
 
 const reviews = [
-  { 
-    name: "Aarav Sharma", 
-    role: "Lucknow, Uttar Pradesh", 
-    text: "Printz delivered outstanding quality and very quick service. Truly impressed!", 
-    rating: 5 
+  {
+    name: "Aarav Sharma",
+    role: "Lucknow, Uttar Pradesh",
+    text: "Printz delivered outstanding quality and very quick service. Truly impressed!",
+    rating: 5
   },
-  { 
-    name: "Priya Verma", 
-    role: "Kanpur, Uttar Pradesh", 
-    text: "Great experience! The team understood our design perfectly and executed it well.", 
-    rating: 4 
+  {
+    name: "Priya Verma",
+    role: "Kanpur, Uttar Pradesh",
+    text: "Great experience! The team understood our design perfectly and executed it well.",
+    rating: 4
   },
-  { 
-    name: "Rohan Singh", 
-    role: "Varanasi, Uttar Pradesh", 
-    text: "Amazing print quality on our T-shirts and banners. Wonderful support too!", 
-    rating: 5 
+  {
+    name: "Rohan Singh",
+    role: "Varanasi, Uttar Pradesh",
+    text: "Amazing print quality on our T-shirts and banners. Wonderful support too!",
+    rating: 5
   },
-  { 
-    name: "Ananya Gupta", 
-    role: "Agra, Uttar Pradesh", 
-    text: "Loved the attention to detail and timely delivery. Highly recommended!", 
-    rating: 5 
+  {
+    name: "Ananya Gupta",
+    role: "Agra, Uttar Pradesh",
+    text: "Loved the attention to detail and timely delivery. Highly recommended!",
+    rating: 5
   },
-  { 
-    name: "Vikram Yadav", 
-    role: "Noida, Uttar Pradesh", 
-    text: "Fast service and excellent customer handling. Our ideas were printed flawlessly.", 
-    rating: 4 
+  {
+    name: "Vikram Yadav",
+    role: "Noida, Uttar Pradesh",
+    text: "Fast service and excellent customer handling. Our ideas were printed flawlessly.",
+    rating: 4
   },
 ];
 
@@ -67,69 +67,70 @@ const BubbleCylinderTestimonials = () => {
         </h2>
 
         <p className="mb-12 text-gray-600">Customer experiences that highlight our dedication to outstanding results.</p>
+        
+        <div className="w-full overflow-x-auto py-5 scroll-smooth">
+          <div className="flex justify-center items-center gap-6 perspective-[1000px]">
+            {reviews.map((review, i) => {
+              const distance = i - activeIndex;
+              const isActive = i === activeIndex;
 
-        <div className="flex justify-center items-center gap-6 perspective-[1000px]">
-          {reviews.map((review, i) => {
-            const distance = i - activeIndex;
-            const isActive = i === activeIndex;
+              // Cylinder effect for horizontal layout
 
-            // Cylinder effect for horizontal layout
-            
-            const width = isActive ? "620px" : "180px";
-            const height = isActive ? "260px" : "260px";
-            const opacity = isActive ? 1 : 0.8;
-            const zIndex = isActive ? 20 : 10;
+              const width = isActive ? "620px" : "180px";
+              const height = isActive ? "260px" : "260px";
+              const opacity = isActive ? 1 : 0.8;
+              const zIndex = isActive ? 20 : 10;
 
-            return (
-              <div
-                key={i}
-                onClick={() => setActiveIndex(i)}
-                className="
+              return (
+                <div
+                  key={i}
+                  onClick={() => setActiveIndex(i)}
+                  className="
                 backdrop-blur-xl
-              rounded-3xl 
-              p-2
-              border border-white/10
-              shadow-[0_20px_40px_rgba(0,0,0,0.35)]
-              hover:shadow-[0_30px_60px_rgba(0,0,0,0.5)]
+                rounded-3xl 
+                p-2
+                border border-white/10
+                hover:shadow-[0_30px_60px_rgba(0,0,0,0.5)]
              
-              transform 
-              hover:-translate-y-4
-              hover:rotate-[0.8deg]
+                transform 
+                hover:-translate-y-4
+                hover:rotate-[0.8deg]
                 relative cursor-pointer transition-all duration-500  bg-white flex flex-col justify-between"
-                style={{
-                  // transform: `scale(${scale}) rotateY(${rotateY}deg)`,
-                  width: width,
-                  minHeight: height,
-                  opacity: opacity,
-                  zIndex: zIndex,
-                }}
-              >
-                
-                
-                
+                  style={{
+                    // transform: `scale(${scale}) rotateY(${rotateY}deg)`,
+                    width: width,
+                    minHeight: height,
+                    opacity: opacity,
+                    zIndex: zIndex,
+                  }}
+                >
 
-                <div className="p-6 text-left">
-                  <h3 className="text-lg font-bold text-[#01227F]">{review.name}</h3>
-                  <p className="text-gray-500 text-sm mb-3">{review.role}</p>
-                  <div
-      className={`absolute top-16 left-6 right-6 transition-opacity duration-500`}
-      style={{
-        opacity: isActive ? 1 : 0,
-        pointerEvents: isActive ? "auto" : "none", // prevent interaction when hidden
-      }}
-    >
-      <p className="text-gray-700 mt-2 p-2">{review.text}</p>
-    </div>
-                </div>
 
-                <div className="flex gap-1 p-4 justify-start">
-                  {Array.from({ length: 5 }, (_, j) => (
-                    <Star key={j} filled={j < review.rating} />
-                  ))}
+
+
+                  <div className="p-6 text-left">
+                    <h3 className="text-lg font-bold text-[#01227F]">{review.name}</h3>
+                    <p className="text-gray-500 text-sm mb-3">{review.role}</p>
+                    <div
+                      className={`absolute top-16 left-6 right-6 transition-opacity duration-500`}
+                      style={{
+                        opacity: isActive ? 1 : 0,
+                        pointerEvents: isActive ? "auto" : "none", // prevent interaction when hidden
+                      }}
+                    >
+                      <p className="text-gray-700 mt-2 p-2">{review.text}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-1 p-4 justify-start">
+                    {Array.from({ length: 5 }, (_, j) => (
+                      <Star key={j} filled={j < review.rating} />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
