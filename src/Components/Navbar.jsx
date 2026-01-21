@@ -11,6 +11,7 @@ import ArrowDown from "../Assets/next_W.png";
 import Search from "../Assets/search.png";
 import Cart from "../Assets/cart1.png";
 import Delivery from "../Assets/delivery.png";
+import BStar from "../Assets/Bstar.png";
 import Seven from "../Assets/Seven.png";
 import Photo from "../Assets/picture.png";
 import Tote from "../Assets/tote.png";
