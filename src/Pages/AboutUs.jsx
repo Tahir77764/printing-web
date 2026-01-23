@@ -2,106 +2,171 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#02192F] text-white min-h-screen px-6 md:px-16 py-24">
+    <div
+      className="relative text-white overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url(/printing-bg.png)" }}
+    >
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-[#02192F]/55"></div>
 
-      {/* HEADER */}
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          About <span className="text-[#DB2A7B]">VT Printz</span>
-        </h1>
-        <p className="text-gray-300 text-lg">
-          Your one-stop solution for high-quality, customized printing services.
-        </p>
-      </div>
+      {/* CONTENT */}
+      <div className="relative z-10">
 
-      {/* ABOUT CONTENT */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* ================= HERO ================= */}
+        <section className="text-center px-6 md:px-16 pt-24 pb-10">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
+            About <span className="text-[#DB2A7B]">VT Printz</span>
+          </h1>
 
-        {/* LEFT TEXT */}
-        <div>
-          <h2 className="text-3xl font-semibold mb-4 text-[#0085E1]">
-            Who We Are
+          <p className="text-gray-200 max-w-3xl mx-auto text-base md:text-lg">
+            Your one-stop solution for high-quality, customized printing services.
+          </p>
+
+          <p className="text-gray-300 max-w-2xl mx-auto mt-2 text-sm">
+            Trusted by local businesses, startups, and creators for precision,
+            reliability, and vibrant print quality.
+          </p>
+        </section>
+
+        {/* ================= WHO WE ARE ================= */}
+        <section className="max-w-7xl mx-auto px-6 md:px-16 py-10 grid md:grid-cols-2 gap-10">
+
+          {/* LEFT CONTENT */}
+          <div
+            className="
+              bg-[#02192F]/70 p-6 rounded-2xl border border-[#0085E1]/30
+              transition-all duration-300
+              hover:-translate-y-1
+              hover:border-[#0085E1]
+              hover:shadow-lg hover:shadow-[#0085E1]/20
+            "
+          >
+            <h2 className="text-3xl font-bold mb-3 text-[#0085E1]">
+              Who We Are
+            </h2>
+
+            <p className="text-gray-200 mb-3 leading-relaxed">
+              <span className="text-[#DB2A7B] font-semibold">VT Printz</span> is a
+              customer-centric printing studio delivering premium print solutions
+              for individuals, businesses, and growing brands.
+            </p>
+
+            <p className="text-gray-200 mb-3 leading-relaxed">
+              We focus on{" "}
+              <span className="text-white font-semibold">
+                quality, consistency, and design accuracy
+              </span>{" "}
+              — turning ideas into impactful printed products.
+            </p>
+
+            <p className="text-gray-200 leading-relaxed">
+              Whether it’s a single custom order or bulk production, our workflow
+              ensures reliable output, strict quality checks, and timely delivery.
+            </p>
+          </div>
+
+          {/* ================= WHAT WE PRINT ================= */}
+          <div
+            className="
+              bg-[#02192F]/80 p-6 rounded-2xl border border-[#DB2A7B]/40
+              transition-all duration-300
+              hover:-translate-y-1
+              hover:border-[#DB2A7B]
+              hover:shadow-lg hover:shadow-[#DB2A7B]/25
+            "
+          >
+            <h3 className="text-lg font-bold mb-4 text-[#DB2A7B]">
+              What We Print
+            </h3>
+
+            <ul className="grid grid-cols-2 gap-y-3 text-gray-200 text-sm">
+              {[
+                "T-Shirt Printing",
+                "Mug Printing",
+                "Visiting Cards",
+                "Pamphlets",
+                "ID Cards",
+                "Flex & Banners",
+                "Keychains",
+                "Bottles",
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-[#DB2A7B] rounded-full"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* ================= MISSION ================= */}
+        <section className="max-w-5xl mx-auto px-6 md:px-16 pb-6 text-center">
+          <div
+            className="
+              bg-[#02192F]/60 border border-[#0085E1]/30 rounded-xl p-5
+              transition-all duration-300
+              hover:-translate-y-1
+              hover:border-[#0085E1]
+              hover:shadow-lg hover:shadow-[#0085E1]/20
+            "
+          >
+            <h3 className="text-lg font-semibold text-[#0085E1] mb-2">
+              Our Mission
+            </h3>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              To empower brands and individuals with high-impact printed products
+              through quality craftsmanship, modern design, and dependable service.
+            </p>
+          </div>
+        </section>
+
+        {/* ================= WHY CHOOSE US ================= */}
+        <section className="max-w-7xl mx-auto px-6 md:px-16 pb-20">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Why Choose Us
           </h2>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            <span className="text-[#DB2A7B] font-semibold">VT Printz</span> is a
-            professional printing service provider committed to delivering
-            premium-quality prints for individuals, businesses, and brands.
-            From everyday printing needs to personalized merchandise, we bring
-            your ideas to life with precision and creativity.
-          </p>
 
-          <p className="text-gray-300 leading-relaxed">
-            Whether you are promoting your business, creating custom gifts, or
-            building your brand identity, VT Printz ensures vibrant colors,
-            durable materials, and unmatched finishing.
-          </p>
-        </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Premium Quality",
+                desc: "Sharp prints with vibrant colors and durable materials.",
+              },
+              {
+                title: "Full Customization",
+                desc: "Designs tailored exactly to your requirements.",
+              },
+              {
+                title: "Affordable Pricing",
+                desc: "Professional results without premium price tags.",
+              },
+              {
+                title: "Reliable Delivery",
+                desc: "On-time production with consistent quality control.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="
+                  bg-[#02192F]/70 border border-[#DB2A7B]/30 rounded-xl p-5 text-center
+                  transition-all duration-300
+                  hover:-translate-y-1
+                  hover:border-[#DB2A7B]
+                  hover:shadow-lg hover:shadow-[#DB2A7B]/25
+                "
+              >
+                <h3 className="text-lg font-semibold text-[#DB2A7B] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-200 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
 
-        {/* RIGHT CARD */}
-        <div className="bg-[#02192F] border-2 border-[#DB2A7B] rounded-2xl p-8 shadow-lg">
-          <h3 className="text-2xl font-semibold mb-6 text-[#DB2A7B]">
-            What We Print
-          </h3>
-          <ul className="grid grid-cols-2 gap-4 text-gray-300">
-            <li>• T-Shirt Printing</li>
-            <li>• Mug Printing</li>
-            <li>• Visiting Cards</li>
-            <li>• Pamphlets</li>
-            <li>• ID Cards</li>
-            <li>• Flex & Banners</li>
-            <li>• Keychains</li>
-            <li>• Bottles</li>
-          </ul>
-        </div>
       </div>
-
-      {/* WHY CHOOSE US */}
-      <div className="max-w-6xl mx-auto mt-20">
-        <h2 className="text-3xl font-semibold text-center mb-12 text-[#0085E1]">
-          Why Choose Us
-        </h2>
-
-        <div className="grid md:grid-cols-4 gap-8">
-          {[
-            {
-              title: "Premium Quality",
-              desc: "Sharp prints, vibrant colors, and long-lasting materials."
-            },
-            {
-              title: "Customization",
-              desc: "Fully personalized printing as per your needs."
-            },
-            {
-              title: "Affordable Pricing",
-              desc: "Best quality printing at competitive prices."
-            },
-            {
-              title: "Reliable Service",
-              desc: "On-time delivery with consistent results."
-            }
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="border border-[#9A1E85] rounded-xl p-6 text-center hover:border-[#DB2A7B] transition"
-            >
-              <h3 className="text-xl font-semibold mb-3 text-[#DB2A7B]">
-                {item.title}
-              </h3>
-              <p className="text-gray-300 text-sm">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      
-
-      {/* FOOTER LINE */}
-      <div className="text-center mt-20">
-        <p className="text-gray-400">
-          VT Printz — Turning Your Ideas Into Prints That Speak.
-        </p>
-      </div>
-
     </div>
   );
 };
