@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-import Billboard from "../assets/printing.jpg";
-import Stamps from "../assets/office.jpg";
-import Photo from "../assets/photo.jpg";
-import Wedding from "../assets/invitation.jpg";
-import Tote from "../assets/packaging.jpg";
-import Ticket from "../assets/event.jpg";
-import Seven from "../assets/id.jpg";
-import Delivery from "../assets/markiting.jpg";
+import Billboard from "../Assets/printing.jpg";
+import Stamps from "../Assets/office.jpg";
+import Photo from "../Assets/photo.jpg";
+import Wedding from "../Assets/invitation.jpg";
+import Tote from "../Assets/packaging.jpg";
+import Ticket from "../Assets/event.jpg";
+import Seven from "../Assets/id.jpg";
+import Delivery from "../Assets/markiting.jpg";
 
 const PRODUCTS = [
   {

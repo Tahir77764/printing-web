@@ -1,6 +1,6 @@
-import Delivery from "../assets/delivery.png";
-import BStar from "../assets/Bstar.png";
-import Seven from "../assets/Seven.png";
+import Delivery from "../Assets/delivery.png";
+import BStar from "../Assets/Bstar.png";
+import Seven from "../Assets/Seven.png";
 
 const features = [
   {

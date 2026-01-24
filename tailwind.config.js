@@ -16,10 +16,10 @@ module.exports = {
       },
       backgroundImage:{
         'vinto-gradient': 'linear-gradient(135deg, #02192F, #031F3A)',
-        'HeroImgSmall1':'url(./assets/back1.png)',
-        'HeroImgSmall2':'url(./assets/back2.png)',
-        'HeroImgSmall3':'url(./assets/back3.png)',
-        'HeroImgSmall4':'url(./assets/back4.png)',
+        'HeroImgSmall1':'url(./Assets/back1.png)',
+        'HeroImgSmall2':'url(./Assets/back2.png)',
+        'HeroImgSmall3':'url(./Assets/back3.png)',
+        'HeroImgSmall4':'url(./Assets/back4.png)',
       },
       boxShadow:{
         'shadow5px': '0 0 5px',

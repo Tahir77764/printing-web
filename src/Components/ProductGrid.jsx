@@ -1,13 +1,13 @@
 import React from "react";
-import RoundTShirt from "../assets/RoundTShirt.png";
-import PoloTShirt from "../assets/PoloTShirt.png";
-import Caps from "../assets/Caps.jpg";
-import CSK from "../assets/CSKJersy.png";
-import Hoodie from "../assets/Hoodie.png";
-import Mugs from "../assets/Mugs.png";
-import Bottle from '../assets/Bottle1.png';
-import Pamplate from '../assets/Pamplate1.png';
-import Canopy from '../assets/Canopy.jpg';
+import RoundTShirt from "../Assets/RoundTShirt.png";
+import PoloTShirt from "../Assets/PoloTShirt.png";
+import Caps from "../Assets/Caps.jpg";
+import CSK from "../Assets/CSKJersy.png";
+import Hoodie from "../Assets/Hoodie.png";
+import Mugs from "../Assets/Mugs.png";
+import Bottle from '../Assets/Bottle1.png';
+import Pamplate from '../Assets/Pamplate1.png';
+import Canopy from '../Assets/Canopy.jpg';
 
 const products = [
   {

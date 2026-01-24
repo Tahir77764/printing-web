@@ -1,10 +1,10 @@
-import Billboard from "../assets/billboard.png";
-import Stamps from "../assets/stamp.png";
-import Photo from "../assets/picture.png";
-import Wedding from "../assets/wedding.png";
-import Tote from "../assets/tote.png";
-import Ticket from "../assets/tickets.png";
-import Seven from "../assets/Seven.png";
+import Billboard from "../Assets/billboard.png";
+import Stamps from "../Assets/stamp.png";
+import Photo from "../Assets/picture.png";
+import Wedding from "../Assets/wedding.png";
+import Tote from "../Assets/tote.png";
+import Ticket from "../Assets/tickets.png";
+import Seven from "../Assets/Seven.png";
 
 export const products = [
   {

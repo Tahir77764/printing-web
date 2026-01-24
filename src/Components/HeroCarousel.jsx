@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import HeroTshirt from '../assets/TShirt.png';
-import Capss from '../assets/Capss.png';
-import poster from'../assets/poster2.png';
+import HeroTshirt from '../Assets/TShirt.png';
+import Capss from '../Assets/Capss.png';
+import poster from'../Assets/poster2.png';
 
 const HeroCarousel = () => {
   return (

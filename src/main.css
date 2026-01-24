@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: VT-Font;
-  src: url(./assets/Degular_Fonts/Degular-Bold.otf);
+  src: url(./Assets/Degular_Fonts/Degular-Bold.otf);
 }
 
 @font-face {
   font-family: VT-Hero-Heading-Font;
-  src: url(./assets/beachday.regular.otf);
+  src: url(./Assets/beachday.regular.otf);
 }
 
 *{

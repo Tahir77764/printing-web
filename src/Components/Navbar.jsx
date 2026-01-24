@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import ArrowDown from "../assets/next_W.png";
-import Search from "../assets/search.png";
-import Cart from "../assets/cart1.png";
-import Menu from "../assets/menu.png";
+import ArrowDown from "../Assets/next_W.png";
+import Search from "../Assets/search.png";
+import Cart from "../Assets/cart1.png";
+import Menu from "../Assets/menu.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
