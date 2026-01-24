@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "start": "vite --port 4011",
     "build": "vite build",
     "lint": "eslint .",
