@@ -7,26 +7,52 @@ const AboutUs = () => {
       style={{ backgroundImage: "url(/printing-bg.png)" }}
     >
       {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-[#02192F]/55"></div>
+      <div className="absolute inset-0 bg-[#02192F]/31"></div>
 
       {/* CONTENT */}
       <div className="relative z-10">
 
-        {/* ================= HERO ================= */}
-        <section className="text-center px-6 md:px-16 pt-24 pb-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
-            About <span className="text-[#DB2A7B]">VT Printz</span>
-          </h1>
+       {/* ================= HERO ================= */}
+<section className="relative text-center px-6 md:px-16 pt-6 pb-14 mt-6">
 
-          <p className="text-gray-200 max-w-3xl mx-auto text-base md:text-lg">
-            Your one-stop solution for high-quality, customized printing services.
-          </p>
+  {/* HERO BACKDROP */}
+  <div
+    className="
+      absolute inset-0
+      mx-4 md:mx-10
+      rounded-3xl
+      bg-gradient-to-b
+      from-[#02192F]/85
+      via-[#02192F]/70
+      to-[#02192F]/60
+      backdrop-blur-sm
+    "
+  ></div>
 
-          <p className="text-gray-300 max-w-2xl mx-auto mt-2 text-sm">
-            Trusted by local businesses, startups, and creators for precision,
-            reliability, and vibrant print quality.
-          </p>
-        </section>
+  {/* HERO CONTENT */}
+  <div className="relative z-10 py-14">
+    <h1 className="HeroHeading text-4xl md:text-5xl mb-4 text-white drop-shadow-lg">
+      About{" "}
+      <span className="
+        text-[#DB2A7B]
+        drop-shadow-[0_3px_10px_rgba(219,42,123,0.6)]
+      ">
+        VT Printz
+      </span>
+    </h1>
+
+    <p className="text-gray-100 max-w-3xl mx-auto text-base md:text-lg font-medium">
+      Your one-stop solution for high-quality, customized printing services.
+    </p>
+
+    <p className="text-gray-200 max-w-2xl mx-auto mt-3 text-sm">
+      Trusted by local businesses, startups, and creators for precision,
+      reliability, and vibrant print quality.
+    </p>
+  </div>
+</section>
+
+
 
         {/* ================= WHO WE ARE ================= */}
         <section className="max-w-7xl mx-auto px-6 md:px-16 py-10 grid md:grid-cols-2 gap-10">
@@ -41,7 +67,7 @@ const AboutUs = () => {
               hover:shadow-lg hover:shadow-[#0085E1]/20
             "
           >
-            <h2 className="text-3xl font-bold mb-3 text-[#0085E1]">
+            <h2 className="HeroHeading text-3xl mb-3 text-[#0085E1]">
               Who We Are
             </h2>
 
@@ -75,7 +101,7 @@ const AboutUs = () => {
               hover:shadow-lg hover:shadow-[#DB2A7B]/25
             "
           >
-            <h3 className="text-lg font-bold mb-4 text-[#DB2A7B]">
+            <h3 className="HeroHeading text-xl mb-4 text-[#DB2A7B]">
               What We Print
             </h3>
 
@@ -110,7 +136,8 @@ const AboutUs = () => {
               hover:shadow-lg hover:shadow-[#0085E1]/20
             "
           >
-            <h3 className="text-lg font-semibold text-[#0085E1] mb-2">
+            {/* <h3 className="text-lg font-semibold text-[#0085E1] mb-2"> */}
+            <h3 className="HeroHeading text-xl mb-4 text-[#0085E1]">
               Our Mission
             </h3>
             <p className="text-gray-200 text-sm leading-relaxed">
@@ -155,7 +182,7 @@ const AboutUs = () => {
                   hover:shadow-lg hover:shadow-[#DB2A7B]/25
                 "
               >
-                <h3 className="text-lg font-semibold text-[#DB2A7B] mb-2">
+                <h3 className="HeroHeading text-lg text-[#DB2A7B] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-gray-200 text-sm leading-relaxed">
