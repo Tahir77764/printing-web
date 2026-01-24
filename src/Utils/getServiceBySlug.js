@@ -1,6 +1,6 @@
 // src/utils/getServiceBySlug.js
 
-import { servicesData } from "../assets/ServiceData";
+import { servicesData } from "../data/ServiceData";
 
 export const getServiceBySlug = (slug) => {
   for (const category of servicesData) {

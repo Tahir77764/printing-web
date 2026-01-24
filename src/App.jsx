@@ -12,6 +12,7 @@ import About from './Pages/AboutUs.jsx'
 import ServicesPage from './Pages/ServicesPage.jsx'
 import ServiceDetail from './Pages/ServiceDetails.jsx'
 import ServiceCategoryPage from './Pages/ServiceCategory.jsx'
+import Products from './Pages/Products.jsx';
 
 function App() {
   const location = useLocation();
@@ -20,16 +21,23 @@ function App() {
     <div>
       <Helmet><title>Vinto Printz</title></Helmet>
       
-      <Navbar/>
+      <Navbar />
 
       <div id='Body-routes' className="body-routes">
-        <Routes location={location} key={location.pathname} >
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about-us' element={<About/>}/>
-          <Route path="/services/:categorySlug" element={<ServicesPage/>}/>
-          <Route path="/services/:categorySlug/:serviceSlug" element={<ServiceCategoryPage />} />
-          <Route path="/services/:categorySlug/:serviceSlug/:subSlug" element={<ServiceDetail />} />
-        </Routes>
+        <Routes location={location} key={location.pathname}>
+  <Route path='/' element={<Home />} />
+  <Route path='/about-us' element={<About />} />
+  <Route path='/products' element={<Products />} />
+
+  {/* ✅ QUERY BASED SERVICES PAGE */}
+  <Route path="/services" element={<ServicesPage />} />
+
+  {/* ✅ CATEGORY / SERVICE FLOW */}
+  <Route path="/services/:categorySlug" element={<ServiceCategoryPage />} />
+  <Route path="/services/:categorySlug/:serviceSlug" element={<ServiceCategoryPage />} />
+  <Route path="/services/:categorySlug/:serviceSlug/:subSlug" element={<ServiceDetail />} />
+</Routes>
+
       </div>
 
       

@@ -2,7 +2,7 @@
 // import { useState } from "react";
 // import CategorySection from "../Components/CategorySection";
 // import CategorySidebar from "../Components/CategorySidebar";
-// import { servicesData } from "../assets/ServiceData";
+// import { servicesData } from "../data/ServiceData";
 
 // const ServicesPage = () => {
 //   const categories = servicesData.map((item) => item.category);
@@ -59,31 +59,38 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import CategorySection from "../Components/CategorySection";
 import CategorySidebar from "../Components/CategorySidebar";
-import { servicesData } from "../assets/ServiceData";
+import { servicesData } from "../data/ServiceData";
+
 
 const ServicesPage = () => {
+  // All category names (for sidebar)
   const categories = servicesData.map((item) => item.category);
 
+  // Read query param
   const [searchParams] = useSearchParams();
   const categoryFromURL = searchParams.get("category");
 
+  // Selected category state
   const [selectedCategory, setSelectedCategory] = useState(
     categoryFromURL || categories[0]
   );
 
+  // Sync URL → state
   useEffect(() => {
     if (categoryFromURL && categories.includes(categoryFromURL)) {
       setSelectedCategory(categoryFromURL);
     }
-  }, [categoryFromURL]);
+  }, [categoryFromURL, categories]);
 
+  // 🔥 IMPORTANT FIX (name OR slug both supported)
   const activeCategory = servicesData.find(
-    (item) => item.category === selectedCategory
+    (item) =>
+      item.category === selectedCategory ||
+      item.categorySlug === selectedCategory
   );
 
   return (
     <div className="bg-white pt-24">
-      
       {/* Header */}
       <div className="bg-[#9A1E85] text-white py-16 text-center">
         <h1 className="text-4xl font-bold">Our Printing Services</h1>
@@ -106,14 +113,17 @@ const ServicesPage = () => {
 
         {/* Services */}
         <div className="lg:col-span-3">
-          {activeCategory && (
+          {activeCategory ? (
             <CategorySection
               category={activeCategory.category}
               services={activeCategory.services}
             />
+          ) : (
+            <div className="text-center text-gray-500">
+              No services found for this category.
+            </div>
           )}
         </div>
-
       </div>
     </div>
   );

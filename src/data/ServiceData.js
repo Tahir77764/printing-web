@@ -1,3 +1,5 @@
+// src/data/servicesData.jsx
+
 export const servicesData = [
   {
     category: "Printing Services",
@@ -15,14 +17,22 @@ export const servicesData = [
             slug: "business-cards",
             image: "https://picsum.photos/600/400?random=2",
             description: "Custom business cards with your branding.",
-            features: ["Custom designs", "High-quality card stock", "Fast delivery"],
+            features: [
+              "Custom designs",
+              "High-quality card stock",
+              "Fast delivery",
+            ],
           },
           {
             title: "Personalized Cards",
             slug: "personalized-cards",
             image: "https://picsum.photos/600/400?random=3",
             description: "Personalized cards for gifting or personal use.",
-            features: ["Full color printing", "Custom shapes", "Luxury finishes"],
+            features: [
+              "Full color printing",
+              "Custom shapes",
+              "Luxury finishes",
+            ],
           },
           {
             title: "Luxury Cards",
@@ -142,8 +152,8 @@ export const servicesData = [
   },
 
   {
-    category: "Signage & Marketing Materials",
-    categorySlug: "signage-marketing-materials",
+    category: "Marketing Materials",
+    categorySlug: "marketing-materials",
     services: [
       "Banners",
       "Brochures",
