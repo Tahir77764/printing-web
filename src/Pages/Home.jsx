@@ -5,17 +5,20 @@ import CustomerCarousel from '../Components/CustomerCarousel'
 import FAQ from '../Components/FAQ'
 import Featured from '../Components/Featured'
 
+import VideoStories from '../Components/VideoStories'
+
 function Home() {
   return (
     <div className="w-full h-full pt-24">
-        <HeroCarousel />
-        <div className='w-full h-full'>
-            <ProductGrid />
-            <CustomerCarousel />
-            <Featured />
-            <FAQ />
+      <VideoStories />
+      <HeroCarousel />
+      <div className='w-full h-full'>
+        <ProductGrid />
+        <CustomerCarousel />
+        <Featured />
+        <FAQ />
 
-        </div>
+      </div>
     </div>
   )
 }

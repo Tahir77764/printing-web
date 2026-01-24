@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: { 
+      screens: {
         'xs': '560px',
         'xxs': '490px',
         'xxxs': '430px',
@@ -14,14 +14,14 @@ module.exports = {
         'mmd': '850px',
         'llg': '1100px',
       },
-      backgroundImage:{
+      backgroundImage: {
         'vinto-gradient': 'linear-gradient(135deg, #02192F, #031F3A)',
-        'HeroImgSmall1':'url(./Assets/back1.png)',
-        'HeroImgSmall2':'url(./Assets/back2.png)',
-        'HeroImgSmall3':'url(./Assets/back3.png)',
-        'HeroImgSmall4':'url(./Assets/back4.png)',
+        'HeroImgSmall1': 'url(./Assets/HQ_back1.png)',
+        'HeroImgSmall2': 'url(./Assets/HQ_back2.png)',
+        'HeroImgSmall3': 'url(./Assets/HQ_back3.png)',
+        'HeroImgSmall4': 'url(./Assets/HQ_back4.png)',
       },
-      boxShadow:{
+      boxShadow: {
         'shadow5px': '0 0 5px',
         'shadow10px': '0 0 10px',
         'shadow20px': '0 0 20px'
