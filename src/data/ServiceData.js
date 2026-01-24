@@ -1,5 +1,14 @@
 // src/data/servicesData.jsx
-
+import VisitingCards from "../Assets/service_visitingcards.png";
+import PamphletsPosters from "../Assets/service_pamphletsposters.png";
+import Letterheads from "../Assets/service_letterheads.png";
+import PhotoFrames from "../Assets/service_photoframes.png";
+import Invitations from "../Assets/service_invitations.png";
+import Tickets from "../Assets/service_tickets.png";
+import IDCards from "../Assets/service_idcards.png";
+import Packaging from "../Assets/service_packaging.png";
+import Banners from "../Assets/service_banners.png";
+import Brochures from "../Assets/service_brochures.png";
 export const servicesData = [
   {
     category: "Printing Services",
@@ -8,7 +17,7 @@ export const servicesData = [
       {
         title: "Visiting Cards",
         slug: "visiting-cards",
-        image: "https://picsum.photos/600/400?random=1",
+        image: VisitingCards,
         description: "High-quality professional printing with premium materials.",
         features: ["Premium quality", "Custom sizes", "Fast delivery"],
         subcategories: [
@@ -47,7 +56,7 @@ export const servicesData = [
       {
         title: "Pamphlets & Posters",
         slug: "pamphlets-posters",
-        image: "https://picsum.photos/600/400?random=5",
+        image: PamphletsPosters,
         description: "Custom printed pamphlets and posters.",
         features: ["Glossy finish", "Custom sizes", "Affordable prices"],
         subcategories: [
@@ -71,7 +80,7 @@ export const servicesData = [
       {
         title: "Letterheads",
         slug: "letterheads",
-        image: "https://picsum.photos/600/400?random=8",
+        image: Letterheads,
         description: "Custom letterheads for official use.",
         features: ["Premium paper", "Custom designs", "Fast delivery"],
         subcategories: [],
@@ -80,7 +89,7 @@ export const servicesData = [
       {
         title: "Stickers & Labels",
         slug: "stickers-labels",
-        image: "https://picsum.photos/600/400?random=9",
+        image: "https://picsum.photos/600/400?random=7",
         description: "High-quality stickers and labels.",
         features: ["Durable adhesive", "Custom shapes", "Weather resistant"],
         subcategories: [],
@@ -89,7 +98,7 @@ export const servicesData = [
       {
         title: "Bill Books",
         slug: "bill-books",
-        image: "https://picsum.photos/600/400?random=10",
+        image: "https://picsum.photos/600/400?random=8",
         description: "Printed bill books for business use.",
         features: ["Duplicate copies", "Custom branding"],
         subcategories: [],
@@ -98,7 +107,7 @@ export const servicesData = [
       {
         title: "Printed Pens",
         slug: "printed-pens",
-        image: "https://picsum.photos/600/400?random=11",
+        image: "https://picsum.photos/600/400?random=9",
         description: "Branded pens for promotion.",
         features: ["Smooth writing", "Custom logo"],
         subcategories: [],
@@ -107,7 +116,7 @@ export const servicesData = [
       {
         title: "Envelopes",
         slug: "envelopes",
-        image: "https://picsum.photos/600/400?random=12",
+        image: "https://picsum.photos/600/400?random=10",
         description: "Printed envelopes with branding.",
         features: ["Multiple sizes", "Premium paper"],
         subcategories: [],
@@ -116,7 +125,7 @@ export const servicesData = [
       {
         title: "Files / Folders",
         slug: "files-folders",
-        image: "https://picsum.photos/600/400?random=13",
+        image: "https://picsum.photos/600/400?random=11",
         description: "Custom printed files and folders.",
         features: ["Professional finish", "Durable"],
         subcategories: [],
@@ -125,7 +134,7 @@ export const servicesData = [
       {
         title: "Garment Tags",
         slug: "garment-tags",
-        image: "https://picsum.photos/600/400?random=14",
+        image: "https://picsum.photos/600/400?random=12",
         description: "Printed garment tags for apparel.",
         features: ["Custom shapes", "Premium paper"],
         subcategories: [],
@@ -134,7 +143,7 @@ export const servicesData = [
       {
         title: "Card Holders",
         slug: "card-holders",
-        image: "https://picsum.photos/600/400?random=15",
+        image: "https://picsum.photos/600/400?random=13",
         description: "Business card holders.",
         features: ["Durable material", "Compact design"],
         subcategories: [],
@@ -143,7 +152,7 @@ export const servicesData = [
       {
         title: "Shooting Targets",
         slug: "shooting-targets",
-        image: "https://picsum.photos/600/400?random=16",
+        image: "https://picsum.photos/600/400?random=14",
         description: "Printed shooting targets.",
         features: ["High contrast", "Custom sizes"],
         subcategories: [],
