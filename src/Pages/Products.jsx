@@ -13,51 +13,51 @@ const PRODUCTS = [
   {
     img: Billboard,
     label: "Printing Services",
-    path: "/services/Printing-Services",
+    slug: "printing-services",
   },
   {
     img: Delivery,
     label: "Marketing Materials",
-    path: "/services?category=Marketing Materials",
+    slug: "marketing-materials",
   },
   {
     img: Stamps,
     label: "Office Items",
-    path: "/services?category=Office Items",
+    slug: "office-items",
   },
   {
     img: Photo,
     label: "Photo Frames",
-    path: "/services?category=Photo Frames",
+    slug: "photo-frames",
   },
   {
     img: Wedding,
     label: "Invitations & Cards",
-    path: "/services?category=Invitations & Cards",
+    slug: "invitations-cards",
   },
   {
     img: Tote,
     label: "Packaging Solutions",
-    path: "/services?category=Packaging Solutions",
+    slug: "packaging-solutions",
   },
   {
     img: Ticket,
     label: "Tickets & Event Cards",
-    path: "/services?category=Tickets & Event Cards",
+    slug: "tickets-event-cards",
   },
   {
     img: Seven,
     label: "ID Cards & Accessories",
-    path: "/services?category=ID Cards & Accessories",
+    slug: "corporate-id-cards-accessories",
   },
 ];
 
 const Products = () => {
   const navigate = useNavigate();
 
-  const ProductCard = ({ img, label, path }) => (
+  const ProductCard = ({ img, label, slug }) => (
     <div
-      onClick={() => navigate(path)}
+      onClick={() => navigate(`/services?category=${slug}`)}
       className="
         bg-white rounded-2xl cursor-pointer
         shadow-md hover:shadow-xl
@@ -66,19 +66,14 @@ const Products = () => {
         overflow-hidden
       "
     >
-      {/* Image Section */}
       <div className="p-6">
         <img
           src={img}
           alt={label}
-          className="
-            w-full h-40 object-cover
-            rounded-xl
-          "
+          className="w-full h-40 object-cover rounded-xl"
         />
       </div>
 
-      {/* Text Section */}
       <div className="p-5 text-center">
         <h2 className="HeroHeading text-lg font-semibold text-gray-800">
           {label}
@@ -89,7 +84,6 @@ const Products = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 pt-28 px-4 sm:px-10">
-      {/* PAGE HEADER */}
       <div className="max-w-7xl mx-auto mb-14 text-center">
         <h1 className="HeroHeading text-4xl sm:text-5xl mb-4">
           Explore Our Products
@@ -100,14 +94,8 @@ const Products = () => {
         </p>
       </div>
 
-      {/* PRODUCTS GRID */}
       <div className="max-w-7xl mx-auto p-10">
-        <div
-          className="
-            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-            gap-8
-          "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {PRODUCTS.map((product, index) => (
             <ProductCard key={index} {...product} />
           ))}
