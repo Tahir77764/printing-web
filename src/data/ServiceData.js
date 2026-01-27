@@ -2,13 +2,7 @@
 import VisitingCards from "../Assets/service_visitingcards.png";
 import PamphletsPosters from "../Assets/service_pamphletsposters.png";
 import Letterheads from "../Assets/service_letterheads.png";
-import PhotoFrames from "../Assets/service_photoframes.png";
-import Invitations from "../Assets/service_invitations.png";
-import Tickets from "../Assets/service_tickets.png";
-import IDCards from "../Assets/service_idcards.png";
-import Packaging from "../Assets/service_packaging.png";
-import Banners from "../Assets/service_banners.png";
-import Brochures from "../Assets/service_brochures.png";
+
 export const servicesData = [
   {
     category: "Printing Services",
