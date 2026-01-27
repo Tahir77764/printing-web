@@ -90,7 +90,7 @@ const ProductPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 pt-28 px-4 sm:px-10">
       {/* PAGE HEADER */}
-      <div className="max-w-7xl mx-auto mb-14 text-center">
+      <div className="max-w-7xl mx-auto mt-[-60px] text-center">
         <h1 className="HeroHeading text-4xl sm:text-5xl mb-4">
           Explore Our Products
         </h1>
