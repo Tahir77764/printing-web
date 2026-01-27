@@ -5,7 +5,11 @@ import Letterheads from "../Assets/Printing_Services_Images/service_letterheads.
 import StickersAndLabels from "../Assets/Printing_Services_Images/service_stickersandlabels.png";
 import BillBooks from "../Assets/Printing_Services_Images/billbooks.png";
 import PrintedPens from "../Assets/Printing_Services_Images/printed_pens.png";
-import Envelops from "../Assets/Printing_Services_Images/envelops.png"
+import Envelops from "../Assets/Printing_Services_Images/envelops.png";
+import FilesAndFolders from "../Assets/Printing_Services_Images/files&folders.png";
+import GarmentsTag from "../Assets/Printing_Services_Images/garmentstag.png";
+import CardHolder from "../Assets/Printing_Services_Images/cardholder.png";
+import ShootingTargets from "../Assets/Printing_Services_Images/shooting targets.jpg";
 
 export const servicesData = [
   {
@@ -123,7 +127,7 @@ export const servicesData = [
       {
         title: "Files / Folders",
         slug: "files-folders",
-        image: "https://picsum.photos/600/400?random=11",
+        image:FilesAndFolders,
         description: "Custom printed files and folders.",
         features: ["Professional finish", "Durable"],
         subcategories: [],
@@ -132,7 +136,7 @@ export const servicesData = [
       {
         title: "Garment Tags",
         slug: "garment-tags",
-        image: "https://picsum.photos/600/400?random=12",
+        image:GarmentsTag,
         description: "Printed garment tags for apparel.",
         features: ["Custom shapes", "Premium paper"],
         subcategories: [],
@@ -141,7 +145,7 @@ export const servicesData = [
       {
         title: "Card Holders",
         slug: "card-holders",
-        image: "https://picsum.photos/600/400?random=13",
+        image:CardHolder,
         description: "Business card holders.",
         features: ["Durable material", "Compact design"],
         subcategories: [],
@@ -150,7 +154,7 @@ export const servicesData = [
       {
         title: "Shooting Targets",
         slug: "shooting-targets",
-        image: "https://picsum.photos/600/400?random=14",
+        image:ShootingTargets,
         description: "Printed shooting targets.",
         features: ["High contrast", "Custom sizes"],
         subcategories: [],

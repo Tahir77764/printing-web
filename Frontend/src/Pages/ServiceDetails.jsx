@@ -90,7 +90,7 @@
 
 // src/pages/ServiceDetailPage.jsx
 import { useParams } from "react-router-dom";
-import { servicesData } from "../data/ServiceData";
+import { servicesData } from "../Assets/ServiceData";
 
 const ServiceDetailPage = () => {
   const { categorySlug, serviceSlug } = useParams(); // Get category and service slugs from URL
