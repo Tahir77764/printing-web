@@ -1,7 +1,11 @@
 // src/data/servicesData.jsx
-import VisitingCards from "../Assets/service_visitingcards.png";
-import PamphletsPosters from "../Assets/service_pamphletsposters.png";
-import Letterheads from "../Assets/service_letterheads.png";
+import VisitingCards from "../Assets/Printing_Services_Images/service_visitingcards.png";
+import PamphletsPosters from "../Assets/Printing_Services_Images/service_pamphletsposters.png";
+import Letterheads from "../Assets/Printing_Services_Images/service_letterheads.png";
+import StickersAndLabels from "../Assets/Printing_Services_Images/service_stickersandlabels.png";
+import BillBooks from "../Assets/Printing_Services_Images/billbooks.png";
+import PrintedPens from "../Assets/Printing_Services_Images/printed_pens.png";
+import Envelops from "../Assets/Printing_Services_Images/envelops.png"
 
 export const servicesData = [
   {
@@ -83,7 +87,7 @@ export const servicesData = [
       {
         title: "Stickers & Labels",
         slug: "stickers-labels",
-        image: "https://picsum.photos/600/400?random=7",
+        image: StickersAndLabels,
         description: "High-quality stickers and labels.",
         features: ["Durable adhesive", "Custom shapes", "Weather resistant"],
         subcategories: [],
@@ -92,7 +96,7 @@ export const servicesData = [
       {
         title: "Bill Books",
         slug: "bill-books",
-        image: "https://picsum.photos/600/400?random=8",
+        image:BillBooks,
         description: "Printed bill books for business use.",
         features: ["Duplicate copies", "Custom branding"],
         subcategories: [],
@@ -101,7 +105,7 @@ export const servicesData = [
       {
         title: "Printed Pens",
         slug: "printed-pens",
-        image: "https://picsum.photos/600/400?random=9",
+        image: PrintedPens,
         description: "Branded pens for promotion.",
         features: ["Smooth writing", "Custom logo"],
         subcategories: [],
@@ -110,7 +114,7 @@ export const servicesData = [
       {
         title: "Envelopes",
         slug: "envelopes",
-        image: "https://picsum.photos/600/400?random=10",
+        image: Envelops,
         description: "Printed envelopes with branding.",
         features: ["Multiple sizes", "Premium paper"],
         subcategories: [],
