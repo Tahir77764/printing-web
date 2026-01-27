@@ -4,18 +4,19 @@ import ProductGrid from '../Components/ProductGrid'
 import CustomerCarousel from '../Components/CustomerCarousel'
 import FAQ from '../Components/FAQ'
 import Featured from '../Components/Featured'
+import VideoCategoryStrip from '../Components/VideoCategoryStrip.jsx';
 
 function Home() {
   return (
-    <div className="w-full h-full pt-24">
-        <HeroCarousel />
-        <div className='w-full h-full'>
-            <ProductGrid />
-            <CustomerCarousel />
-            <Featured />
-            <FAQ />
-
-        </div>
+    <div className="w-full h-full home-page">
+      <VideoCategoryStrip />
+      <HeroCarousel />
+      <div className='w-full h-full product-grid'>
+        <ProductGrid />
+        <CustomerCarousel />
+        <Featured />
+        <FAQ />
+      </div>
     </div>
   )
 }

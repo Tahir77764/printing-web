@@ -14,7 +14,6 @@ import ServiceDetail from './Pages/ServiceDetails.jsx'
 import ServiceCategoryPage from './Pages/ServiceCategory.jsx'
 import ProductPage from './Pages/ProductPage.jsx';
 import ProductList from './Pages/ProductList.jsx';
-import VideoCategoryStrip from './Components/VideoCategoryStrip.jsx';
 import AddProduct from './Components/AddProduct.jsx';
 
 
@@ -26,7 +25,6 @@ function App() {
       <Helmet><title>Vinto Printz</title></Helmet>
 
       <Navbar />
-      <VideoCategoryStrip />
 
       <div id='Body-routes' className="body-routes">
         <Routes location={location} key={location.pathname} >

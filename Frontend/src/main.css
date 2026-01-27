@@ -27,9 +27,7 @@
   margin-top: -90px;
 } */
 
-#hero-top-padding{
-  margin-top: -90px;
-}
+
 /* To Hide main scrollbar */
 #Frame::-webkit-scrollbar{ display: none; }
 #Frame{ -ms-overflow-style: none; }
@@ -103,3 +101,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-text-stroke: 1px white;
 }
 
+.home-page {
+  margin-top: -50px;
+}
+
+.body-routes{
+  padding-top: 60px;
+}
+.product-grid{
+  margin-top: -160px;
+}
